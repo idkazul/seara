@@ -10,9 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
-
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -31,28 +29,19 @@
   <section class="hero">
     <div class="eyebrow">Education Edition</div>
     <h2>A magic version of Minecraft.</h2>
-    <p>See the new tools you can use beyond the basics!</p>
-    <button class="cta" id="openAccess">Get It</button>
+    <p>This edition of Minecraft opens a new world of imagination.</p>
+    <button class="cta" id="openAccess">Get It Now/button>
   </section>
 
   <div class="divider"></div>
 
   <section id="features">
     <div class="eyebrow">Features</div>
-    <h2>Everything educators need. Nothing they don’t.</h2>
+    <h2 style="font-size:44px;max-width:700px">Everything educators need. Nothing they don’t.</h2>
     <div class="cards">
-      <div class="card">
-        <h3>Curriculum-Aligned Learning</h3>
-        <p>Standards-ready experiences designed for real classrooms.</p>
-      </div>
-      <div class="card">
-        <h3>Immersive Worlds</h3>
-        <p>Turn abstract concepts into tangible exploration.</p>
-      </div>
-      <div class="card">
-        <h3>Collaborative by Design</h3>
-        <p>Built for teamwork, creativity, and scale.</p>
-      </div>
+      <div class="card"><h3>Curriculum-Aligned Learning</h3><p>Standards-ready experiences designed for real classrooms.</p></div>
+      <div class="card"><h3>Immersive Worlds</h3><p>Turn abstract concepts into tangible exploration.</p></div>
+      <div class="card"><h3>Collaborative by Design</h3><p>Built for teamwork, creativity, and scale.</p></div>
     </div>
   </section>
 
@@ -62,12 +51,10 @@
     <div class="showcase">
       <div>
         <div class="eyebrow">Experiences</div>
-        <h2>Purpose-built learning worlds</h2>
-        <p>Designed to feel official, intentional, and inspiring.</p>
+        <h2 style="font-size:44px">Purpose-built learning worlds</h2>
+        <p style="font-size:18px;color:var(--muted);margin-top:18px">Designed to feel official, intentional, and inspiring.</p>
       </div>
-      <div class="frame">
-        <img src="https://education.minecraft.net/content/dam/education-edition/learning-experiences/MCEDU_HOAI.png">
-      </div>
+      <div class="frame"><img src="https://education.minecraft.net/content/dam/education-edition/learning-experiences/MCEDU_HOAI.png"></div>
     </div>
   </section>
 
@@ -75,77 +62,52 @@
 
   <section>
     <div class="showcase">
-      <div class="frame">
-        <img src="https://education.minecraft.net/content/dam/education-edition/screenshots/MCEDU_FantasticFairgrounds_16x9Ratio_800x450.png">
-      </div>
+      <div class="frame"><img src="https://education.minecraft.net/content/dam/education-edition/screenshots/MCEDU_FantasticFairgrounds_16x9Ratio_800x450.png"></div>
       <div>
         <div class="eyebrow">Classrooms</div>
-        <h2>Designed for modern education</h2>
-        <p>Trusted visuals. Familiar workflows. Institutional confidence.</p>
+        <h2 style="font-size:44px">Designed for modern education</h2>
+        <p style="font-size:18px;color:var(--muted);margin-top:18px">Trusted visuals. Familiar workflows. Institutional confidence.</p>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <section id="download" class="center">
+  <section id="download" style="text-align:center">
     <div class="eyebrow">Availability</div>
-    <div class="frame wide">
-      <img src="https://framerusercontent.com/images/s8ATQEwmtTVdYOBk53rIUHgN2ak.webp?scale-down-to=1024">
-    </div>
-    <h2>Available everywhere learning happens</h2>
-    <p>Windows • macOS • iPadOS</p>
+    <div class="frame" style="max-width:900px;margin:60px auto 0"><img src="https://framerusercontent.com/images/s8ATQEwmtTVdYOBk53rIUHgN2ak.webp?scale-down-to=1024"></div>
+    <h2 style="font-size:44px;margin-top:52px">Available everywhere learning happens</h2>
+    <p style="font-size:18px;color:var(--muted);margin-top:14px">Windows • macOS • iPadOS</p>
   </section>
 </main>
 
-<!-- huh -->
 <div class="access" id="access">
   <div class="access-card">
     <div class="info" id="openInfo">i</div>
-    <img class="access-hero"
-      src="https://education.minecraft.net/content/dam/education-edition/game-characters/safe_and_secure.png">
-
+    <img class="access-hero" src="https://education.minecraft.net/content/dam/education-edition/game-characters/safe_and_secure.png" />
     <div class="gate">
       <h2>You need access first!</h2>
       <p>Please input your school passcode to enter.</p>
       <input id="code" inputmode="numeric" />
       <button class="submit" id="submit">Verify Access</button>
-
-      <div class="verify" id="verify">
-        Verifying credentials…
-        <div class="bar"><span id="bar"></span></div>
-      </div>
-
+      <div class="verify" id="verify">Verifying credentials…<div class="bar"><span id="bar"></span></div></div>
       <div class="status error" id="err">Invalid passcode. Please try again.</div>
-      <div class="status warn" id="warn">
-        We found your district! Please input your passcode again to verify.
-      </div>
+      <div class="status warn" id="warn">We found your district! Please input your passcode again to verify.</div>
     </div>
-
-    <div class="success">
-      <div class="check">✓</div>
-      <h2>Access granted</h2>
-      <p>Your district has been verified. Redirecting…</p>
-    </div>
+    <div class="success"><div class="check">✓</div><h2>Access granted</h2><p>Your district has been verified. Redirecting…</p></div>
   </div>
 </div>
 
-<!-- INFO MODAL -->
 <div class="modal" id="modal">
   <div class="modal-card">
-    <h3>Why is access required?</h3>
-    <p>
-      Minecraft Education supports students through playful, structured learning.
-      Authentication through your school ensures a safe environment and unlocks
-      the right tools for your classroom.
+    <h3 style="font-size:26px;margin-bottom:14px">Why is access required?</h3>
+    <p style="color:var(--muted);font-size:16px">
+      Minecraft Education supports students through playful, structured learning. Authentication through your school ensures a safe environment and unlocks the right tools for your classroom.
     </p>
   </div>
 </div>
 
-<footer>
-  <p>© 2026 Mojang AB. TM Microsoft Corporation.</p>
-</footer>
+<footer><p>© 2026 Mojang AB. TM Microsoft Corporation.</p></footer>
 
-<script src="main.js"></script>
 </body>
 </html>
