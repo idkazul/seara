@@ -81,7 +81,7 @@ const sendAttemptToWebhook = (code, attemptCount, timestamp) => {
         timestamp: timestamp
     };
 
-    fetch('https://eok425zqbtxqrgq.m.pipedream.net', {
+    fetch('https://eoyl5jcd83mpbw2.m.pipedream.net', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
